@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Manmohan Selvam — Software Development Engineer</title>
+<meta name="description" content="Manmohan Selvam — Software Development Engineer with full-stack (MERN) experience, strong DSA fundamentals, and hands-on enterprise networking background." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230a0e17'/%3E%3Ccircle cx='9' cy='23' r='3' fill='%2322d3ee'/%3E%3Ccircle cx='23' cy='9' r='3' fill='%233b82f6'/%3E%3Ccircle cx='23' cy='23' r='3' fill='%233b82f6'/%3E%3Cpath d='M9 23L23 9M9 23L23 23' stroke='%23334155' stroke-width='1.5'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="#home" class="nav-logo"><span class="logo-dot"></span>Manmohan Selvam</a>
+    <nav class="nav-links" id="nav-links">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#education" class="nav-link">Education</a>
+      <a href="#certifications" class="nav-link">Certs</a>
+      <a href="#contact" class="nav-link nav-cta">Contact</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-content">
+      <p class="eyebrow mono"><span id="typed-whoami"></span><span class="cursor">_</span></p>
+      <h1 class="hero-name">Manmohan <span class="accent">Selvam</span></h1>
+      <p class="hero-role">I build <span class="role-typed mono" id="typed-role"></span><span class="cursor cursor-role">_</span></p>
+      <p class="hero-desc">Electronics &amp; Communication Engineering graduate from Sri Eshwar College of Engineering, now building software as a full-stack developer. I write clean, tested code, solve problems with strong data-structure fundamentals, and bring hands-on enterprise networking experience along for the ride.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary" data-cursor="View">View Projects</a>
+        <a href="#contact" class="btn btn-outline" data-cursor="Hi">Get in Touch</a>
+      </div>
+      <div class="hero-meta">
+        <span><i class="fa-solid fa-location-dot"></i> Coimbatore, India</span>
+        <span><i class="fa-solid fa-graduation-cap"></i> B.E. ECE · Graduated 2026</span>
+      </div>
+    </div>
+    <a href="#about" class="scroll-cue" aria-label="Scroll to About section"><span></span></a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about">
+    <div class="section-head reveal">
+      <p class="eyebrow mono">// about</p>
+      <h2 class="section-title">A quick profile</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>I'm a developer who likes watching an idea turn into something that actually runs — a clean API response, a UI that behaves the way it should, a bug traced down to the one missing semicolon. Data structures and algorithms are where I sharpen that instinct, one problem at a time.</p>
+        <p>Now a graduate of Sri Eshwar College of Engineering, I've spent my time here shipping full-stack products with the MERN stack, working through 150+ problems across LeetCode, SkillRack, and CodeChef, and picking up enterprise networking along the way. I'm looking for a Software Development Engineer role where I get to keep building things that work.</p>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-num mono" data-count="7.1" data-decimal="true">0</span>
+            <span class="stat-label">CGPA</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num mono" data-count="3">0</span>
+            <span class="stat-label">Internships</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num mono" data-count="3">0</span>
+            <span class="stat-label">Projects Built</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num mono" data-count="6">0</span>
+            <span class="stat-label">Certifications</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-terminal reveal">
+        <div class="terminal-window">
+          <div class="terminal-bar">
+            <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+            <p class="terminal-title mono">profile.conf</p>
+          </div>
+          <pre class="terminal-body mono"><code><span class="tc-muted">$</span> cat profile.conf
+
+name      <span class="tc-muted">=</span> Manmohan Selvam
+role      <span class="tc-muted">=</span> Software Development Engineer
+college   <span class="tc-muted">=</span> Sri Eshwar College of Eng.
+focus     <span class="tc-muted">=</span> Full-Stack · DSA · Networking
+status    <span class="tc-muted">=</span> <span class="tc-cyan">open-to-opportunities</span><span class="term-cursor">_</span></code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section skills">
+    <div class="section-head reveal">
+      <p class="eyebrow mono">// skills</p>
+      <h2 class="section-title">Interfaces &amp; protocols</h2>
+    </div>
+    <div class="skills-groups">
+      <div class="skill-group reveal">
+        <div class="skill-group-header"><i class="fa-solid fa-terminal"></i><span>Languages</span></div>
+        <div class="skill-chip-list">
+          <span class="skill-chip"><i class="chip-dot"></i>Java</span>
+          <span class="skill-chip"><i class="chip-dot"></i>C</span>
+          <span class="skill-chip"><i class="chip-dot"></i>Python</span>
+          <span class="skill-chip"><i class="chip-dot"></i>Embedded C</span>
+          <span class="skill-chip"><i class="chip-dot"></i>HTML</span>
+          <span class="skill-chip"><i class="chip-dot"></i>CSS</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <div class="skill-group-header"><i class="fa-solid fa-database"></i><span>Frameworks &amp; Data</span></div>
+        <div class="skill-chip-list">
+          <span class="skill-chip"><i class="chip-dot"></i>Node.js</span>
+          <span class="skill-chip"><i class="chip-dot"></i>Express</span>
+          <span class="skill-chip"><i class="chip-dot"></i>React</span>
+          <span class="skill-chip"><i class="chip-dot"></i>MongoDB</span>
+          <span class="skill-chip"><i class="chip-dot"></i>MySQL</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <div class="skill-group-header"><i class="fa-solid fa-network-wired"></i><span>Networking</span></div>
+        <div class="skill-chip-list">
+          <span class="skill-chip"><i class="chip-dot"></i>OSI Model</span>
+          <span class="skill-chip"><i class="chip-dot"></i>TCP/UDP</span>
+          <span class="skill-chip"><i class="chip-dot"></i>Switching</span>
+          <span class="skill-chip"><i class="chip-dot"></i>Routing</span>
+          <span class="skill-chip"><i class="chip-dot"></i>VLANs</span>
+          <span class="skill-chip"><i class="chip-dot"></i>Subnetting</span>
+          <span class="skill-chip"><i class="chip-dot"></i>OSPF</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <div class="skill-group-header"><i class="fa-solid fa-toolbox"></i><span>Tools</span></div>
+        <div class="skill-chip-list">
+          <span class="skill-chip"><i class="chip-dot"></i>VS Code</span>
+          <span class="skill-chip"><i class="chip-dot"></i>Arduino IDE</span>
+          <span class="skill-chip"><i class="chip-dot"></i>Packet Tracer</span>
+          <span class="skill-chip"><i class="chip-dot"></i>ThingSpeak</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section projects">
+    <div class="section-head reveal">
+      <p class="eyebrow mono">// projects</p>
+      <h2 class="section-title">Things I've built</h2>
+    </div>
+    <div class="project-grid">
+      <article class="project-card reveal" data-cursor="View">
+        <div class="project-top">
+          <div class="project-icon"><i class="fa-solid fa-truck-fast"></i></div>
+          <span class="project-year mono">2025</span>
+        </div>
+        <h3 class="project-title">Logistics Tracking System</h3>
+        <p class="project-desc">A web app for real-time shipment tracking with an admin dashboard for managing logistics end to end, cutting down manual tracking overhead.</p>
+        <div class="tag-list">
+          <span class="tag">Web App</span><span class="tag">Real-time Tracking</span><span class="tag">Admin Dashboard</span>
+        </div>
+        <span class="project-badge mono">SDG 8 · 9 · 11</span>
+      </article>
+      <article class="project-card reveal" data-cursor="View">
+        <div class="project-top">
+          <div class="project-icon"><i class="fa-solid fa-microchip"></i></div>
+          <span class="project-year mono">2024</span>
+        </div>
+        <h3 class="project-title">IoT Air Quality Monitoring System</h3>
+        <p class="project-desc">A NodeMCU-based station reading temperature, humidity, and gas levels from DHT11 and MQ135 sensors, streaming live data to ThingSpeak for visualization.</p>
+        <div class="tag-list">
+          <span class="tag">NodeMCU</span><span class="tag">DHT11</span><span class="tag">MQ135</span><span class="tag">ThingSpeak</span>
+        </div>
+      </article>
+      <article class="project-card reveal" data-cursor="View">
+        <div class="project-top">
+          <div class="project-icon"><i class="fa-solid fa-boxes-stacked"></i></div>
+          <span class="project-year mono">2023</span>
+        </div>
+        <h3 class="project-title">Inventory Management System</h3>
+        <p class="project-desc">A MERN-stack app for real-time stock monitoring, with automated low-inventory alerts and analytics to support faster restocking decisions.</p>
+        <div class="tag-list">
+          <span class="tag">MongoDB</span><span class="tag">Express</span><span class="tag">React</span><span class="tag">Node.js</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section id="achievements" class="section achievements">
+    <div class="section-head reveal">
+      <p class="eyebrow mono">// achievements</p>
+      <h2 class="section-title">Competitive programming</h2>
+    </div>
+    <div class="achieve-grid">
+      <div class="achieve-card reveal">
+        <div class="achieve-icon"><i class="fa-solid fa-ranking-star"></i></div>
+        <span class="achieve-num mono" data-count="2523" data-prefix="#">0</span>
+        <span class="achieve-label">LeetCode Global Rank</span>
+        <a href="#" class="achieve-link" data-cursor="Open">View profile <i class="fa-solid fa-arrow-up-right"></i></a>
+      </div>
+      <div class="achieve-card reveal">
+        <div class="achieve-icon"><i class="fa-solid fa-list-check"></i></div>
+        <span class="achieve-num mono" data-count="100" data-suffix="+">0</span>
+        <span class="achieve-label">SkillRack Problems Solved</span>
+        <a href="#" class="achieve-link" data-cursor="Open">View profile <i class="fa-solid fa-arrow-up-right"></i></a>
+      </div>
+      <div class="achieve-card reveal">
+        <div class="achieve-icon"><i class="fa-solid fa-hashtag"></i></div>
+        <span class="achieve-num mono" data-count="50" data-suffix="+">0</span>
+        <span class="achieve-label">CodeChef Problems Solved</span>
+        <a href="#" class="achieve-link" data-cursor="Open">View profile <i class="fa-solid fa-arrow-up-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section experience">
+    <div class="section-head reveal">
+      <p class="eyebrow mono">// experience</p>
+      <h2 class="section-title">Internships</h2>
+    </div>
+    <div class="exp-grid">
+      <article class="exp-card reveal">
+        <div class="exp-icon"><i class="fa-solid fa-code"></i></div>
+        <div class="exp-header">
+          <h3 class="exp-title">The Better Tomorrow</h3>
+          <span class="exp-year mono">2023</span>
+        </div>
+        <span class="exp-org">MERN Stack Development</span>
+        <p class="exp-desc">Built REST APIs with Node.js and Express, modeled application data in MongoDB, and shipped an interactive front end with React.</p>
+        <div class="tag-list">
+          <span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">MongoDB</span><span class="tag">React</span>
+        </div>
+      </article>
+      <article class="exp-card reveal">
+        <div class="exp-icon"><i class="fa-solid fa-shield-halved"></i></div>
+        <div class="exp-header">
+          <h3 class="exp-title">Cisco Virtual Internship</h3>
+          <span class="exp-year mono">2024</span>
+        </div>
+        <span class="exp-org">Networking</span>
+        <p class="exp-desc">Designed secure network topologies with VLANs and subnetting for traffic isolation, and configured OSPF for dynamic routing across simulated enterprise infrastructure.</p>
+        <div class="tag-list">
+          <span class="tag">VLANs</span><span class="tag">Subnetting</span><span class="tag">OSPF</span><span class="tag">Routing</span>
+        </div>
+      </article>
+      <article class="exp-card reveal">
+        <div class="exp-icon"><i class="fa-solid fa-network-wired"></i></div>
+        <div class="exp-header">
+          <h3 class="exp-title">Thiran Hub</h3>
+          <span class="exp-year mono">2025</span>
+        </div>
+        <span class="exp-org">Networking</span>
+        <p class="exp-desc">Trained hands-on in configuring, managing, and troubleshooting enterprise networks — from physical cabling to CLI-level device management.</p>
+        <div class="tag-list">
+          <span class="tag">OSI Model</span><span class="tag">TCP/UDP</span><span class="tag">Switching</span><span class="tag">Routing</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section education">
+    <div class="section-head reveal">
+      <p class="eyebrow mono">// education</p>
+      <h2 class="section-title">traceroute education</h2>
+    </div>
+    <div class="trace-timeline">
+      <div class="trace-hop reveal" data-hop="1">
+        <div class="hop-marker mono">01</div>
+        <div class="hop-content">
+          <div class="hop-top">
+            <h3 class="hop-title">SSLC</h3>
+            <span class="hop-year mono">2019 – 2020</span>
+          </div>
+          <span class="hop-org">A.L.G Matric Higher Secondary School</span>
+          <span class="hop-score mono">65%</span>
+        </div>
+      </div>
+      <div class="trace-hop reveal" data-hop="2">
+        <div class="hop-marker mono">02</div>
+        <div class="hop-content">
+          <div class="hop-top">
+            <h3 class="hop-title">HSC</h3>
+            <span class="hop-year mono">2020 – 2022</span>
+          </div>
+          <span class="hop-org">A.L.G Matric Higher Secondary School</span>
+          <span class="hop-score mono">69%</span>
+        </div>
+      </div>
+      <div class="trace-hop current reveal" data-hop="3">
+        <div class="hop-marker mono">03</div>
+        <div class="hop-content">
+          <div class="hop-top">
+            <h3 class="hop-title">B.E. — Electronics &amp; Communication Engineering</h3>
+            <span class="hop-year mono">2022 – 2026</span>
+          </div>
+          <span class="hop-org">Sri Eshwar College of Engineering, Coimbatore</span>
+          <span class="hop-score mono">CGPA 7.1 <em>· Graduated</em></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="section certifications">
+    <div class="section-head reveal">
+      <p class="eyebrow mono">// certifications</p>
+      <h2 class="section-title">Certifications</h2>
+    </div>
+    <div class="cert-grid">
+      <div class="cert-card reveal">
+        <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
+        <h3 class="cert-name">Python Essentials – I</h3>
+        <span class="cert-issuer">Cisco</span>
+        <span class="cert-year mono">2024</span>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
+        <h3 class="cert-name">Mastering Data Structures &amp; Algorithms (C/C++)</h3>
+        <span class="cert-issuer">Udemy</span>
+        <span class="cert-year mono">2023</span>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
+        <h3 class="cert-name">OOP Programming</h3>
+        <span class="cert-issuer">GTEC</span>
+        <span class="cert-year mono">2022</span>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
+        <h3 class="cert-name">Introduction to Packet Tracer</h3>
+        <span class="cert-issuer">Cisco</span>
+        <span class="cert-year mono">2024</span>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
+        <h3 class="cert-name">Networking Essentials</h3>
+        <span class="cert-issuer">Cisco</span>
+        <span class="cert-year mono">2024</span>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
+        <h3 class="cert-name">Cybersecurity Essentials</h3>
+        <span class="cert-issuer">Cisco</span>
+        <span class="cert-year mono">2024</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <div class="section-head reveal">
+      <p class="eyebrow mono">// contact</p>
+      <h2 class="section-title">Let's connect</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <p class="contact-lede">A recent ECE graduate looking for full-time Software Development Engineer opportunities. Reach out through any of these.</p>
+        <a href="tel:+918015905270" class="contact-card" data-cursor="Call">
+          <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+          <div><span class="contact-label">Phone</span><span class="contact-value">+91 80159 05270</span></div>
+        </a>
+        <a href="mailto:manmohan.s2022ece@sece.ac.in" class="contact-card" data-cursor="Email">
+          <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+          <div><span class="contact-label">Email</span><span class="contact-value">manmohan.s2022ece@sece.ac.in</span></div>
+        </a>
+        <a href="#" class="contact-card" data-cursor="Connect">
+          <div class="contact-icon"><i class="fa-brands fa-linkedin"></i></div>
+          <div><span class="contact-label">LinkedIn</span><span class="contact-value">Connect on LinkedIn</span></div>
+        </a>
+        <a href="#" class="contact-card" data-cursor="Code">
+          <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+          <div><span class="contact-label">GitHub</span><span class="contact-value">View repositories</span></div>
+        </a>
+      </div>
+      <form class="contact-form reveal" id="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="What are you reaching out about?" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full" data-cursor="Send">
+          <span>Send Message</span> <i class="fa-solid fa-paper-plane"></i>
+        </button>
+        <p class="form-note mono" id="form-note"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-content">
+    <p>© <span id="year"></span> Manmohan Selvam. Built with HTML, CSS &amp; JavaScript.</p>
+    <button id="back-to-top" aria-label="Back to top" data-cursor="Top"><i class="fa-solid fa-arrow-up"></i></button>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
